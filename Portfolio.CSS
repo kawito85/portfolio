@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Expletus+Sans&display=swap');
+body{
+    height: 100vh;
+    font-family: 'Expletus Sans', cursive;
+    background-color: white;
+}
+.portfolio{
+    display: flex;
+    min-width: 800px;
+    max-width: 900px;
+    height: 400px;
+    margin: auto 305px ;
+}
+.image {
+    min-width: 60px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    
+    position: relative;
+}
+.image.active{
+    flex-grow: 100;
+    max-width: 600px;
+    margin: 0;
+    border-radius: 7px;
+    background-size: auto 100px;
+}
+.image:not(.active){
+    flex-grow: 1;
+    border-radius: 5px ;
+}
+.text-container{
+    width: 100%;
+    height: 400px;
+    padding: 2rem ;
+    visibility: hidden;
+    transform: translateY(300px);
+    opacity: 0;
+    transition: all , 0,4s ease;
+    background: linear-gradient(345deg, white  0%, transparent 72%);
+    color: black;
+    overflow: hidden;
+}
+.text{
+    position: absolute;
+    bottom: 5rem;
+}
+.active .text-container{
+    visibility:visible;
+    transform: translateY(0px);
+    opacity: 1;
+}
+*{
+    margin: 0;
+}
+.bloc{
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.ligne{
+    text-align: center;
+}
+.prenom{
+    text-align: center;
+    font-size: 30px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  .active {
+    background-color: black;
+    color: white;
+  }
+@media(max-width:1200px) {
+    header{
+        position: relative;
+    }
+    nav ul, nav:active ul{
+        display:none;
+        position: absolute;
+        padding: 20px;
+        background:white;
+        right:10px;
+        top:35px;
+        width: 35%;
+    }
+    nav:hover ul{
+        display: block; 
+    }
+    body{
+        width: 100%;
+        
+    }
+    .portfolio{
+       width: 90%;
+       margin: auto;
+    }
+   .image {
+    min-width: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    
+    position: relative;
+}
+.image.active{
+    flex-grow: 100;
+    max-width: 200px;
+    margin: 0;
+    border-radius: 7px;
+    background-size: auto 100px;
+}
+.image:not(.active){
+    flex-grow: 1;
+    border-radius: 5px ;
+}
+}

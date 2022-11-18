@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire.CSS">
+    <script src="Portfolio.js" defer> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--Pour la création de ce formulaire, je me suis aidé de cette vidéo youtube "https://www.youtube.com/watch?v=W77XNwZKpuE&t=1083s"-->
+<body>
+    <header>
+        <div class="topnav">
+          <a href="#home" class="active">Kaïs Peridy</a>                 <!--Ce menu burger provient d'un site que j'ai utiliser car je n'ai pas reussi a la faire moi meme -->
+          <div id="myLinks">
+            <a href="Portfolio.html">Accueil</a>
+            <a href="Profil.html">Profil</a>
+            <a href="projet.html">Projet</a>
+            <a href="CV.html">CV</a>
+            <a href="formulaire.html">Contact</a>
+
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>  
+    </nav>
+</header>
+    <form>
+        <h1>Contactez-moi</h1>
+        <div class="separer"></div>
+        <div class="corp-principal">
+            <div class="gauche">
+                <div class="boite">
+                    <label>Nom et Prénom</label>
+                    <input type="text"autocomplete="off" />
+                    <i class="fas fa-user"></i>         <!--toutes les lignes de codes écrite avec la balise <i> sont relié a une bibliothèque en ligne qui est link a notre html-->
+                </div>
+                <div class="boite">
+                    <label>Adresse mail</label>
+                    <input type="text" autocomplete="off" />
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="boite">
+                    <label>Téléphone</label>
+                    <input type="text" autocomplete="off" />
+                    <i class="fas fa-solid fa-mobile"></i>
+                </div>
+            </div>
+
+                 <div class="droite">
+                     <div class="groupe">
+                      <label>Message</label>
+                      <input type="text" autocomplete="off" />
+                </div>
+            </div>
+        <div class="footer" align="center">
+            <button>Envoyer</button>
+        </div>
+    </form>
+</body>
+</html>

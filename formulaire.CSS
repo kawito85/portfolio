@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+  font-family: 'Expletus Sans', cursive;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fef1df;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+form h1 {
+  font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+.active {
+  background-color: black;
+  color: white;
+}
+@media only screen and (max-width:1200px) {
+  header{
+      position: relative;
+  }
+  #menu-icon{
+      visibility: visible; 
+      display: inline-block;
+      background-color: black;
+  }
+  nav ul, nav:active ul{
+      display:none;
+      position: absolute;
+      padding: 20px;
+      background:white;
+      right:10px;
+      top:35px;
+      width: 35%;
+  }
+  nav:hover ul{
+      display: block; 
+  }
+  nav li{
+      text-align: center;
+      width: 100%;
+      padding: 15px 0;
+      margin: 0;
+  }
+}
